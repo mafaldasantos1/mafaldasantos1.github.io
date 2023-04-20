@@ -5,25 +5,23 @@ body {
     height: 100svh;
   }
   h1 {
-    font-family: Arial, sans-serif;
-    font-weight: 400;
-    font-size: 36px;
+    @include fontMain;
+    @include fontLarge;
     margin: 0;
     color: #000;
     text-align: center;
   }
   p {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.4;
+    @include fontMain;
+    @include fontMedium;
     text-align: center;
     margin-bottom: 40px;
     color: #000;
   }
   header,
   footer {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
+    @include fontMain;
+    @include fontMedium;
   }
   .flex-grid {
     width: 100%;
@@ -64,7 +62,7 @@ figure {
     background-color: blue;
     overflow: hidden;
     margin: 0;
-   aspect-ratio: 1 / 1;
+    padding-bottom: ratio(16,9);
 }
 
 
@@ -78,15 +76,11 @@ figure {
     padding: 30px 20px;
     max-width: 540px;
     margin: 0 auto;
-  }
   @media (min-width: $medium) {
-    main {
       max-width: 100%;
       padding: 30px;
     }
-  }
   @media (min-width: $large) {
-    main {
       max-width: 1130px;
     }
   }

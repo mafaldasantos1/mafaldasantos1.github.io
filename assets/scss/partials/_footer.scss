@@ -8,5 +8,6 @@ footer {
     p {
     margin-bottom: 0px;
     color: $secondary-color;
+    @include fontSmall;
 }
 }

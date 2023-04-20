@@ -1,0 +1,17 @@
+@mixin fontMain {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.15;
+}
+
+@mixin fontSmall {
+    font-size: 18px;
+}
+
+@mixin fontMedium {
+    font-size: 20px;
+}
+
+@mixin fontLarge {
+    font-size: 24px;
+    font-weight: 700;
+}
