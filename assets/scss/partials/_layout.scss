@@ -1,9 +1,20 @@
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    height: 100svh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100svh;
+  &.sobre{
+    background: rgb(187, 21, 49);
   }
+
+  &.contactos {
+    background: rgb(13, 178, 82);
+  }
+
+  &.home {
+    background: rgb(230, 173, 223);
+  }
+}
   h1 {
     @include fontMain;
     @include fontLarge;
