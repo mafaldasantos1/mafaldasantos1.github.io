@@ -3,6 +3,9 @@ body {
   flex-direction: column;
   margin: 0;
   height: 100svh;
+  &.no-scroll{
+    overflow-y: hidden;
+  }
   &.sobre{
     background: rgb(187, 21, 49);
   }
